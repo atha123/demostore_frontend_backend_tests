@@ -19,7 +19,7 @@ class TestIncorrectLogin:
         account.click_login_button()
 
         #Validate the actual message is same as the expected error message.
-        expected_msg="Error: The username invalid is not registered on this site. If you are unsure of your username, try your email address instead."
+        expected_msg="Error: The username "invalid" is not registered on this site. If you are unsure of your username, try your email address instead."
         account.wait_until_error_is_displayed(expected_msg)
 
         # TODO: Checkout what this is
