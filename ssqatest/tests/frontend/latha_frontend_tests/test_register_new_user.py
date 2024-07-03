@@ -1,14 +1,15 @@
-import time
 import pytest
 import random
 import string
 from ssqatest.src.pages.MyAccountSignedOut import MyAccountSignedOut
 from ssqatest.src.pages.MyAccountSignedIn import MyAccountSignedIn
+import logging as logger
 
 @pytest.mark.usefixtures("init_driver")
 class TestRegisterNewUser:
     """
-    This test is to verify the registration of new user.
+    This test is to verify the registration of new user. If the registration is successful then a confirmation message is logged.
+    Otherwise an Error message is logged.
 
     """
     @pytest.mark.lp003
@@ -27,17 +28,13 @@ class TestRegisterNewUser:
         account.input_register_email(email)
         account.input_register_password("Pass123word!@#")
         account.click_register_button()
-        import pdb;pdb.set_trace()
 
         # Verify the registration was successful
-        # account_registered.verify_user_is_signed_in()
-        time.sleep(3)
+        try:
+            account_registered.verify_user_is_signed_in()
+            logger.info("Congratulations! Registration Successful! ")
+        except:
+            logger.error("Registration Failed!.")
 
-
-        # TODO: try assertion
-        # if account_registered.verify_user_is_signed_in():
-        #     print("Successfully signed in")
-        # else:
-        #     print("Registration failed")
 
 
