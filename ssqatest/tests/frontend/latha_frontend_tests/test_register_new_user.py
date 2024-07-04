@@ -8,7 +8,8 @@ import logging as logger
 @pytest.mark.usefixtures("init_driver")
 class TestRegisterNewUser:
     """
-    This test is to verify the registration of new user. If the registration is successful then a confirmation message is logged.
+    This test is to verify the registration of new user.
+    If the registration is successful then a confirmation message is logged.
     Otherwise an Error message is logged.
 
     """
