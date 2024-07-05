@@ -17,18 +17,17 @@ class TestIncorrectLogin:
         account.input_login_username('invalid')
         account.input_login_password('pass123')
         account.click_login_button()
-        # import pdb; pdb.set_trace()
 
         #Validate the actual message is same as the expected error message.
         expected_msg="Error: The username invalid is not registered on this site. If you are unsure of your username, try your email address instead."
         account.wait_until_error_is_displayed(expected_msg)
 
-
+        # TODO: Checkout what this is
         # account.get_login_form_heading()
         # error_msg=account.get_login_form_heading()
         # # msg=error_msg.text()
         # print(error_msg)
-
+        # TODO: Try this function also to validate the error message
         # account.login_user('invalid','pass123')
 
 

@@ -5,14 +5,8 @@ from ssqatest.src.pages.CartPage import CartPage
 from ssqatest.src.pages.Header import Header
 import time
 
-# from demostore_automation.src.pages.HomePage import HomePage
-# from demostore_automation.src.configs.MainConfigs import MainConfigs
-# from demostore_automation.src.pages.CartPage import CartPage
-# from demostore_automation.src.pages.Header import Header
-# import time
 import math
-# import pdb
-# pdb.set_trace()
+
 
 pytestmark=[pytest.mark.feregression, pytest.mark.fesmoke, pytest.mark.end_to_end]
 @pytest.mark.usefixtures("init_driver")

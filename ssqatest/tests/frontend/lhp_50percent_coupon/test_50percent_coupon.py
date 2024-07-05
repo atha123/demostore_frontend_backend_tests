@@ -1,8 +1,8 @@
 import pytest
-from demostore_automation.src.pages.HomePage import HomePage
-from demostore_automation.src.configs.MainConfigs import MainConfigs
-from demostore_automation.src.pages.CartPage import CartPage
-from demostore_automation.src.pages.Header import Header
+from ssqatest.src.pages.HomePage import HomePage
+from ssqatest.src.configs.MainConfigs import MainConfigs
+from ssqatest.src.pages.CartPage import CartPage
+from ssqatest.src.pages.Header import Header
 import time
 import math
 # import pdb
