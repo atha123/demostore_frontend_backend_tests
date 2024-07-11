@@ -20,3 +20,4 @@ class MyAccountSignedOutLocators:
     REGISTER_HEADING = (By.CSS_SELECTOR, 'div.u-column2.col-2 h2')
     REGISTER_EMAIL_LABEL = (By.CSS_SELECTOR, 'label[for="reg_email"]')
     ACCOUNT_HEADING = (By.CSS_SELECTOR, 'header.entry-header h1')
+    REGISTER_PASSWORD_LABEL= (By.CSS_SELECTOR, 'label[for="reg_password"]')

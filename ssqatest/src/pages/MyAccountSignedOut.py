@@ -67,6 +67,9 @@ class MyAccountSignedOut(MyAccountSignedOutLocators):
         self.input_login_password(password=password)
         self.click_login_button()
 
+    def get_register_form_password_label(self):
+            return self.sl.wait_and_get_text(self.REGISTER_PASSWORD_LABEL)
+
 
 
 

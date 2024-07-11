@@ -8,7 +8,7 @@ import time
 import math
 
 
-pytestmark=[pytest.mark.feregression, pytest.mark.fesmoke, pytest.mark.end_to_end]
+pytestmark=[pytest.mark.feregression, pytest.mark.fesmoke]
 @pytest.mark.usefixtures("init_driver")
 
 class TestApply50PercentCoupon:
