@@ -12,12 +12,12 @@ pytestmark=[pytest.mark.feregression, pytest.mark.fesmoke]
 @pytest.mark.usefixtures("init_driver")
 
 class TestApply50PercentCoupon:
-    @pytest.mark.tcid40
-    @pytest.mark.pioneertcid40
-    @pytest.mark.lp001
-    @pytest.mark.esqf12
-
+@pytest.mark.tcid40
+@pytest.mark.pioneertcid40
+@pytest.mark.lp001
+@pytest.mark.esqf12
     def test_50_percent_coupon(self):
+
         #create objects
         home_page=HomePage(self.driver)
         cart_page=CartPage(self.driver)
@@ -54,7 +54,7 @@ class TestApply50PercentCoupon:
         if expected_compare != actual_compare:
             raise Exception("After applying 50% off coupon, the expected total and the actual total do not match! ")
         else:
-            print("Perfect")
+            print("50 percent discount is now applied!")
 
 
 

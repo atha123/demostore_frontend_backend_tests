@@ -1,6 +1,8 @@
 import pytest
 import logging as log
 from ssqatest.src.pages.MyAccountSignedOut import MyAccountSignedOut
+
+pytestmark=[pytest.mark.feregression, pytest.mark.fesmoke]
 @pytest.mark.usefixtures("init_driver")
 @pytest.mark.lp004
 class TestForLabelsOnRegistrationForm():
