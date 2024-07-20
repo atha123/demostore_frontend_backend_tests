@@ -2,8 +2,6 @@
 #_OVERRIDE
 #DB_DATABASE=localdemostore
 
-
-
 set BASE_URL=http://dev.bootcamp.store.supersqa.com
 set BROWSER=chrome
 set RESULTS_DIR=$(pwd)/results
